@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/MazeSolving.cpp : src/MazeSolving.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/MazeSolving.ino[0m
+	@/Users/asnelzin/Documents/projects/BRDbot/venv/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/MazeSolving.cpp
+	@true
+
